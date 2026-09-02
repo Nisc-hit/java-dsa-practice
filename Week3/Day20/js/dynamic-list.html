@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic List Demo</title>
+</head>
+<body>
+    <ul id="myList"></ul>
+    <script>
+        let list = document.getElementById("myList");
+        for (let i = 1; i <= 5; i++) {
+            let item = document.createElement("li");
+            item.innerText = "Item " + i;
+            list.appendChild(item);
+        }
+    </script>
+</body>
+</html>

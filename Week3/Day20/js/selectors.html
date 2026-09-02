@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors Demo</title>
+</head>
+<body>
+    <p id="myPara">Hello there</p>
+    <script>
+        let byId = document.getElementById("myPara");
+        let byQuery = document.querySelector("#myPara"); // # means "by id" in CSS selector syntax
+        console.log(byId === byQuery); // true - same actual element
+        byId.style.color = "green"; // affects the same element either way
+    </script>
+</body>
+</html>
