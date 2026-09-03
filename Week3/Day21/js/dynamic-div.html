@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Div</title>
+<style>
+.box {
+padding: 12px;
+margin: 8px 0;
+background: lightblue;
+border: 1px solid #333;
+border-radius: 6px;
+}
+</style>
+</head>
+<body>
+<button onclick="createDiv()">Create Div</button>
+<div id="container"></div>
+<script>
+function createDiv() {
+const div = document.createElement("div");
+div.textContent = "New div created!";
+div.classList.add("box");
+document.getElementById("container").appendChild(div);
+}
+</script>
+</body>
+</html>
