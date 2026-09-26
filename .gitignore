@@ -1,3 +1,6 @@
 *.class node_modules/
 my-product-app/
 *.class
+
+*.class
+node_modules/
